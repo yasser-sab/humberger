@@ -1,0 +1,36 @@
+
+:root {
+
+/*start color variables*/
+
+/*primary*/
+
+--dark-blue: hsl(233, 26%, 24%);
+--lime-green: hsl(136, 65%, 51%);
+--bright-cyan: hsl(192, 70%, 51%);
+
+--bg-gradient:linear-gradient(90deg,var(--lime-green),var(--bright-cyan));
+
+/*Neutral*/
+
+--grayish-blue: hsl(233, 8%, 62%);
+--light-grayish-blue: hsl(220, 16%, 96%);
+--very-light-gray: hsl(0, 0%, 98%);
+--white: hsl(0, 0%, 100%);
+
+/*end color variables*/
+
+/*start font variables*/
+
+--fs: 18px;
+/*--fs:1.125em;*/
+--ff: 'Public Sans', sans-serif;
+--fw-s: 300;
+--fw-m: 400;
+--fw-l: 700;
+
+/*end font variables*/
+
+--container-size:1.33334rem;
+
+}

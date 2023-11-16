@@ -1,0 +1,111 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+
+body {
+	box-sizing: inherit;
+	padding: 0;
+	font-size: var(--fs);
+	font-family: var(--ff);
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	color: var(--white);
+}
+
+
+
+ul {
+	list-style-type: none;
+}
+
+
+
+p {
+	/*font-size: 15px;*/
+	font-size: .83334em;
+	font-weight: var(--fw-m);
+    color: var(--grayish-blue)
+}
+
+.button {
+	/*font-size: 13px;*/
+	font-size: .72223em;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	color: var(--dark-blue);
+	font-weight: var(--fw-m);
+}
+
+h1 {
+    /*font-size: 36px;*/
+    font-size: 2em;
+    /*margin-bottom: 24px;*/
+    margin-bottom: .6667em;
+    font-weight: var(--fw-l);
+}
+
+h2 {
+	/*font-size: 30px;*/
+	font-size: 1.6667em;
+	/*margin-bottom: 23px;*/
+	margin-bottom: .766667em;
+}
+
+h3 {
+	/*font-size: 20px;*/
+	font-size: 1.1112em;
+	/*margin-bottom: 25px;*/
+	margin-bottom: 1.25em;
+}
+
+span {
+	/*font-size: 10px;*/
+	font-size: .5556em;
+	display: block;
+	font-weight: var(--fw-s);
+	color: var(--grayish-blue);
+}
+
+h4 {
+	/*font-size: 15px;*/
+	font-size: .83334em;
+	/*margin-bottom: 13px;*/
+	margin-bottom: .86667em;
+}
+
+@media screen and (min-width: 600px) {
+	p {
+		font-size: 18px;
+	}
+
+	span {
+		
+	}
+	h1, h2, h3, h4 {
+		margin-bottom: 32px;
+	}
+
+	h1 {
+		font-size: 50px;
+		
+	}
+
+	h2 {
+		font-size: 37px;
+		margin-bottom: 33px;
+	}
+
+	h4 {
+		font-size: 16px;
+		margin-bottom: 13px;
+	}
+}

@@ -1,0 +1,26 @@
+@import "../modules/links.css";
+@import "../controls/button.css";
+@import "../states/humburger.css";
+
+.nav {
+	padding: 1em 0;
+	gap:30px
+}
+
+.nav__img {
+	/*max-width: 140px;*/
+	max-width: 7.7778em;
+	/*max-height: 22px;*/
+	max-height: 1.2223em;
+}
+
+.nav__button {
+}
+
+.nav__hamburger {
+	min-width: 1.33334em;
+	min-height: .611112em;
+	background:url('../../../images/icon-hamburger.svg') no-repeat center center / cover;
+	display: none;
+	cursor: pointer;
+}

@@ -1,0 +1,89 @@
+@import "hero.css";
+@import "features.css";
+@import "latest.css";
+
+.main {
+
+}
+
+@media screen and (min-width:600px) {
+
+  /*hero*/
+
+  .hero {
+    flex-direction: row-reverse;
+    text-align: left;
+
+  }
+
+  .hero__img {
+    min-height: 530px;
+    background:url('../../../images/bg-intro-desktop.svg') no-repeat left center;
+  }
+
+  .hero__img::before {
+    min-height: 128%;
+    min-width: 71%;
+    background-position: left bottom;
+    background-size: auto 113%;
+    right: 0;
+  }
+
+  .hero__content {
+    padding: 0;
+  }
+
+  /*features*/
+
+  .features {
+    padding: 106px 0;
+    text-align: left;
+  }
+
+  .features__details {
+    gap:32px;
+    padding-top: 32px;
+  }
+
+  .features__fait {
+    flex-grow: 0;
+    padding-top: 0;
+  }
+
+  .features__img {
+    margin:44px 0;
+  }
+
+
+  /*latest*/
+
+  .latest {
+    padding: 80px 0;
+    text-align: left;
+  }
+
+  .latest__articles {
+    gap:30px;
+    margin-top: 22px;
+  }
+
+  .latest__article {
+    flex-grow: 0;
+  }
+
+  .latest__writer {
+    margin-bottom: 14px;
+  }
+
+  .latest__heading a {
+    color: var(--dark-blue);
+  }
+
+  .latest__heading a:hover {
+    color: var(--lime-green);
+  }
+
+  .latest__text {
+    font-size: 13px;
+  }
+}

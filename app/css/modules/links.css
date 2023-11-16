@@ -1,0 +1,36 @@
+.links {
+	--f:.833334em;
+
+	gap:1.77778em;
+	font-size:var(--f);
+
+}
+
+.links__item {
+	position: relative;
+}
+
+.links__item a {
+	color: var(--grayish-blue);
+}
+
+.links__item:hover a {
+	color: var(--dark-blue);
+}
+
+.links__item::before {
+	opacity: 0;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 100%;
+	height: .2222em;
+	transform:translateY(calc(2em - 25%));
+	background: var(--bg-gradient);
+	transition: .2s;
+}
+
+.links__item:hover::before {
+	opacity: 1;
+}

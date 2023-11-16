@@ -1,0 +1,85 @@
+@import "navigation.css";
+
+.header {
+	position: relative;
+	background-color: var(--white);
+	z-index: 3;
+}
+
+.nav {
+	position: relative;
+}
+
+.links {
+	display: none;
+	padding: 1.77778em 0;
+	background-color: var(--white);
+	position: absolute;
+	flex-direction: column;
+	top: 100%;
+	width: 100%;
+	border-radius: 5px;
+	transform: translateY(var(--container-size));
+	z-index: 4;
+}
+
+.links__item a{
+	color: var(--dark-blue);
+}
+
+.links__item::before {
+	content: none;
+}
+
+.nav__button {
+	display: none;
+}
+
+.nav__hamburger {
+	display: block;
+}
+
+.overlay.isActive {
+	display: block;
+}
+
+@media screen and (min-width:600px) {
+
+	:root {
+		/*--container-size:9.166667rem;*/
+		--container-size:5rem;
+	}
+
+	.links {
+		display: flex;
+		padding: 0;
+		background-color: var(--white);
+		position: static;
+		flex-direction: row;
+		top: 0;
+		width: auto;
+		border-radius: 0;
+		transform: translateY(0);
+		z-index: 0;
+	}
+
+	.links__item a{
+		color: var(--grayish-blue);
+	}
+	
+	.links__item::before {
+		content: "";
+	}
+
+	.nav__button {
+		display: inline-block;
+	}
+
+	.nav__hamburger {
+		display: none;
+	}
+
+	.overlay {
+		display: none;
+	}
+}

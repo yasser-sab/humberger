@@ -1,0 +1,9 @@
+.nav__hamburger.isActive {
+	width: 1em;
+	height: 1.055556em;
+	background-image:url('../../../images/icon-close.svg');
+}
+
+.nav__hamburger.isActive + .links {
+	display: flex;
+}

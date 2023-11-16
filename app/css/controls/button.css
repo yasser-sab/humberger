@@ -1,0 +1,20 @@
+.button {
+	/*--f:14px;*/
+	--f:.83334em;
+	--button-c:var(--white);
+	/*--padding:16px 34px;*/
+	--padding:1.06667em 2.26667em;
+
+	font-size: var(--f);
+	border:none;
+	/*border-radius: 50px;*/
+	border-radius: 3.3334em;
+	background:var(--bg-gradient);
+	color: var(--button-c);
+	padding: var(--padding);
+	transition: .2s;
+}
+
+.button:hover {
+	opacity: .5;
+}

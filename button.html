@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+		}
+
+		.d-button {
+			position: relative;
+			border:none;
+			outline: none;
+			background-color: hsl(24, 100%, 50% );
+			color: white;
+			/*border-radius: 5px;*/
+			padding: 10px 20px;
+			box-shadow: -5px 5px 0 hsl(24, 20%, 50% );
+		}
+
+		.d-button::before {
+			content: "";
+			position: absolute;
+			border-width: 0px 0px 5px 5px;
+			border-color:hsl(24, 20%, 50% ) transparent;
+			border-style: solid;
+			left: 0;
+			top: 0;
+			
+			transform:translateX(-100%);
+		}
+
+		.d-button:active::before {
+			transform:translateX(-50%);
+			border-width: 0px 0px 2px;
+		}
+
+		.d-button:active::after {
+			transform:translateY(50%);
+			border-width: 0px 0px 2px;
+		}
+
+		.d-button::after {
+			content: "";
+			position: absolute;
+			border-width: 5px 5px 0px 0px;
+			border-color:hsl(24, 20%, 50% ) transparent;
+			border-style: solid;
+			right: 0;
+			bottom: 0;
+			transform:translateY(100%);
+		}
+
+		.d-button:active {
+			top: 5px;
+			box-shadow: -1px 1px 0 hsl(24, 20%, 50% );
+		}
+
+		.d-round {
+			position: relative;
+			width: 50px;
+			height: 50px;
+			background-color: hsl(54,100%,50%);
+			border:none;
+			border-radius: 50%;
+			color: white;
+			box-shadow: 0 4px 0 hsl(54,100%,40%);
+			outline: none;
+		}
+
+		.d-round:hover {
+			top: 2px;
+			box-shadow: 0 0px 0 2px hsl(54,100%,40%);
+		}
+
+		.g {
+			border:5px solid transparent;
+			outline: none;
+			border-image: linear-gradient(45deg,red,orange);
+			
+			border-image-slice: 1;
+			/*transition: .5s;*/
+		}
+
+		.g:hover {
+			background:linear-gradient(45deg,red,orange);
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+<button type="button" class="g">gradient</button>
+<!-- <button type="button" class="d-button">facebook</button> -->
+<!-- <button type="button" class="d-round">round</button> -->
+
+</body>
+</html>
